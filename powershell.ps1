@@ -11,7 +11,7 @@ Write-Host "Powershell 2 Enabled:"
 (Test-Path $env:windir\Microsoft.Net\Framework\v2.0.50727\System.dll)
 Write-Host "Powershell 5 Enabled:"
 (Test-Path $env:windir\Microsoft.Net\Framework\v4.0.30319\System.dll)
-Write-Host "Legacy Scripting Enabled:"
+Write-Host "Legacy Task Scheduling Enabled:"
 [Bool](Get-ItemProperty 'HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Configuration' -ErrorAction SilentlyContinue).EnableAt
 Write-Host "Machine Password Change Disabled:"
 (Get-ItemProperty HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters).DisablePasswordChange
