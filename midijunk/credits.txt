@@ -1,0 +1,5 @@
+Thanks to Bradan Lane for some of this code, and a random LLM for the rest
+
+also 
+
+https://github.com/bhagman/Tone/blob/master/examples/RTTTL/RTTTL.pde
