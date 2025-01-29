@@ -1,0 +1,2 @@
+# Japanese
+Omakase Table
